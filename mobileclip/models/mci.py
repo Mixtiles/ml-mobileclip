@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
-from timm.models.layers import DropPath, trunc_normal_
+from timm.layers import DropPath, trunc_normal_
 from timm.models import register_model
 
 from mobileclip.modules.common.mobileone import MobileOneBlock

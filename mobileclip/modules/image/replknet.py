@@ -7,7 +7,7 @@ from typing import Tuple
 import torch
 import torch.nn as nn
 
-from timm.models.layers import SqueezeExcite
+from timm.layers import SqueezeExcite
 
 __all__ = ["ReparamLargeKernelConv"]
 
