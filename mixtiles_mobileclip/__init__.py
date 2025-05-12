@@ -16,11 +16,9 @@ from torchvision.transforms import (
     ToTensor,
 )
 
-from mobileclip.clip import CLIP
-from mobileclip.modules.text.tokenizer import (
-    ClipTokenizer,
-)
-from mobileclip.modules.common.mobileone import reparameterize_model
+from mixtiles_mobileclip.clip import CLIP
+from mixtiles_mobileclip.modules.text.tokenizer import ClipTokenizer
+from mixtiles_mobileclip.modules.common.mobileone import reparameterize_model
 
 
 def create_model_and_transforms(

@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 
 from timm.layers import DropPath, trunc_normal_
-from mobileclip.modules.common.mobileone import MobileOneBlock
+from mixtiles_mobileclip.modules.common.mobileone import MobileOneBlock
 
 
 class ConvFFN(nn.Module):

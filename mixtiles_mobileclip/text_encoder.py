@@ -8,13 +8,13 @@ from typing import Optional, Sequence
 import torch
 from torch import Tensor, nn
 
-from mobileclip.modules.common.transformer import (
+from mixtiles_mobileclip.modules.common.transformer import (
     PositionalEmbedding,
     TransformerEncoder,
     get_normalization_layer,
 )
-from mobileclip.modules.text.repmixer import RepMixerBlock
-from mobileclip import logger
+from mixtiles_mobileclip.modules.text.repmixer import RepMixerBlock
+from mixtiles_mobileclip import logger
 
 
 class TextTransformer(nn.Module):

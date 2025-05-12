@@ -10,7 +10,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from mobileclip.text_encoder import (
+from mixtiles_mobileclip.text_encoder import (
     TextTransformer,
 )
 

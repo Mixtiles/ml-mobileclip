@@ -13,8 +13,8 @@ from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.layers import DropPath, trunc_normal_
 from timm.models import register_model
 
-from mobileclip.modules.common.mobileone import MobileOneBlock
-from mobileclip.modules.image.replknet import ReparamLargeKernelConv
+from mixtiles_mobileclip.modules.common.mobileone import MobileOneBlock
+from mixtiles_mobileclip.modules.image.replknet import ReparamLargeKernelConv
 
 
 def _cfg(url="", **kwargs):

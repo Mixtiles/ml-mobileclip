@@ -7,8 +7,8 @@ from typing import Any
 import torch.nn as nn
 from timm.models import create_model
 
-from mobileclip import models  # Added to register models
-from mobileclip.modules.image.image_projection import GlobalPool2D
+from mixtiles_mobileclip import models  # Added to register models
+from mixtiles_mobileclip.modules.image.image_projection import GlobalPool2D
 
 
 class MCi(nn.Module):

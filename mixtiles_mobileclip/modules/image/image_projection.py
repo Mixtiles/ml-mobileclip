@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 from torch import Tensor
 
-from mobileclip import logger
+from mixtiles_mobileclip import logger
 
 
 class GlobalPool(nn.Module):

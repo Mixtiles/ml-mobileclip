@@ -16,13 +16,13 @@ import torch
 from torch import Tensor, nn
 
 from timm.models import register_model
-from mobileclip.modules.common.transformer import (
+from mixtiles_mobileclip.modules.common.transformer import (
     PositionalEmbedding,
     TransformerEncoder,
     get_normalization_layer,
 )
-from mobileclip.modules.image.image_projection import SimpleImageProjectionHead
-from mobileclip import logger
+from mixtiles_mobileclip.modules.image.image_projection import SimpleImageProjectionHead
+from mixtiles_mobileclip import logger
 
 
 class ConvNormAct(nn.Module):
