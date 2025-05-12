@@ -40,10 +40,10 @@ To models from the official repo, follow the code snippet below
 ```python
 import torch
 from PIL import Image
-import mobileclip
+import mixtiles_mobileclip
 
-model, _, preprocess = mobileclip.create_model_and_transforms('mobileclip_s0', pretrained='/path/to/mobileclip_s0.pt')
-tokenizer = mobileclip.get_tokenizer('mobileclip_s0')
+model, _, preprocess = mixtiles_mobileclip.create_model_and_transforms('mobileclip_s0', pretrained='/path/to/mobileclip_s0.pt')
+tokenizer = mixtiles_mobileclip.get_tokenizer('mobileclip_s0')
 
 image = preprocess(Image.open("docs/fig_accuracy_latency.png").convert('RGB')).unsqueeze(0)
 text = tokenizer(["a diagram", "a dog", "a cat"])
@@ -75,7 +75,7 @@ pip install git+https://github.com/huggingface/pytorch-image-models
 To run inference, see example below,
 ```python
 import open_clip
-from mobileclip.modules.common.mobileone import reparameterize_model
+from mixtiles_mobileclip.modules.common.mobileone import reparameterize_model
  
 model, _, preprocess = open_clip.create_model_and_transforms('MobileCLIP-S2', pretrained='datacompdr')
 tokenizer = open_clip.get_tokenizer('MobileCLIP-S2')
